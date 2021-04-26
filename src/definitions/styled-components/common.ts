@@ -1,5 +1,5 @@
 // #region Global Imports
-import { BaseTheme } from "styled-components";
+import { BaseTheme } from "@styledinterfaces";
 // #endregion Global Imports
 
 const common: BaseTheme = {

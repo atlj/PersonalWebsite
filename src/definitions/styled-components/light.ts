@@ -1,5 +1,5 @@
 // #region Global Imports
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from "@styledinterfaces";
 // #endregion Global Imports
 import { common } from "./common";
 
