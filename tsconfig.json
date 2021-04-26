@@ -19,6 +19,7 @@
             "@definitions": ["src/definitions"],
             "@interfaces/*": ["src/interfaces/*"],
             "@interfaces": ["src/interfaces"],
+            "@styledinterfaces": ["src/interfaces/styled-components/styled"],
             "@components/*": ["src/components/*"],
             "@components": ["src/components"],
             "@styles/*": ["src/styles/*"],
