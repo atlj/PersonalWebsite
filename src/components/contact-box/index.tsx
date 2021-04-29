@@ -25,7 +25,7 @@ const Default: React.FC<{
 };
 
 const Contact: React.FC<{
-    onClick?: React.MouseEventHandler<HTMLDivElement>;
+    onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }> = ({ onClick }) => {
     return (
         <Base className="contact">
@@ -91,7 +91,7 @@ const Contact: React.FC<{
 
 export const ContactBox: React.FC<{
     variant: "default" | "contact";
-    onClick?: React.MouseEventHandler<HTMLDivElement>;
+    onClick?: React.MouseEventHandler<HTMLDivElement | HTMLAnchorElement>;
 }> = ({ variant, onClick }) => {
     switch (variant) {
         case "default":
