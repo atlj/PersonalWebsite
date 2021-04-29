@@ -1,17 +1,31 @@
 // #region Global Imports
 import "styled-components";
 // #endregion Global Imports
-type CommonColors = "transparent" | "darkGrey" | "blackGrey" | "white";
+type CommonColors =
+    // | "transparent"
+    // | "darkGrey"
+    // | "blackGrey"
+    | "white"
+    | "black"
+    | "gray"
+    | "gradientProgramming"
+    | "gradientGraphicDesign"
+    | "gradient3DModeling"
+    | "gradientLanguageButton"
+    | "gradientThemeButton"
+    | "gradientContactBox";
 
 type ExtendedColors =
     | CommonColors
-    | "toggleBorder"
-    | "gradient"
     | "background"
-    | "headerBg"
-    | "cardsBg"
     | "textColor"
-    | "dodgerBlue";
+    | "background"
+    | "backgroundElevated";
+// | "toggleBorder"
+// | "gradient"
+// | "headerBg"
+// | "cardsBg"
+// | "dodgerBlue";
 export interface BaseTheme {
     colors: Record<CommonColors, string>;
 }
