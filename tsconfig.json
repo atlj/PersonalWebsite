@@ -20,6 +20,7 @@
             "@interfaces/*": ["src/interfaces/*"],
             "@interfaces": ["src/interfaces"],
             "@styledinterfaces": ["src/interfaces/styled-components/styled"],
+            "@resources/*": ["public/res/*"],
             "@components/*": ["src/components/*"],
             "@components": ["src/components"],
             "@styles/*": ["src/styles/*"],
