@@ -65,10 +65,15 @@ const Contact: React.FC<{
                         marginTop: 10.9,
                     }}
                 >
-                    <Box href="https://artstation.com/atlj" className="square">
+                    <Box
+                        target="_blank"
+                        href="https://artstation.com/atlj"
+                        className="square"
+                    >
                         <SVGArtStation />
                     </Box>
                     <Box
+                        target="_blank"
                         href="https://github.com/atlj"
                         style={{ marginLeft: 10 }}
                         className="square"
