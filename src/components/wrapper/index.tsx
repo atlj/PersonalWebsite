@@ -1,6 +1,9 @@
 import React from "react";
 import { Container } from "./styled";
 
-export const Wrapper: React.FC = ({ children }) => {
-    return <Container>{children}</Container>;
+export const Wrapper: React.FC<{ style?: React.CSSProperties }> = ({
+    children,
+    style,
+}) => {
+    return <Container style={style}>{children}</Container>;
 };
