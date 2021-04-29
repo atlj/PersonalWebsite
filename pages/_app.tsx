@@ -9,6 +9,36 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <StyledThemeProvider>
             <Head>
                 <title>Burak Güner</title>
+                <link
+                    rel="apple-touch-icon"
+                    sizes="180x180"
+                    href="/res/favicon/apple-touch-icon.png"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="32x32"
+                    href="/res/favicon/favicon-32x32.png"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="16x16"
+                    href="/res/favicon/favicon-16x16.png"
+                />
+                <link rel="manifest" href="/res/favicon/site.webmanifest" />
+                <link
+                    rel="mask-icon"
+                    href="/res/favicon/safari-pinned-tab.svg"
+                    color="#9939b2"
+                />
+                <link rel="shortcut icon" href="/res/favicon/favicon.ico" />
+                <meta property="msapplication-TileColor" content="#00aba9" />
+                <meta
+                    property="msapplication-config"
+                    content="/res/favicon/browserconfig.xml"
+                />
+                <meta property="theme-color" content="#f8f7fa" />
                 <meta property="og:title" content="Burak Güner" key="title" />
                 <meta
                     property="og:description"
