@@ -4,13 +4,21 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                ProgrammingFrom: "#5182FF",
-                ProgrammingTo: "#F4ACE4",
-                GraphicDesignFrom: "#A276FF",
-                GraphicDesignTo: "#59A9F2",
-                ModelingFrom: "#F7C59F",
-                ModelingTo: "#F285C7",
-                
+                Programming: {
+                    From: "#5182FF",
+                    To: "#F4ACE4",
+                },
+                GraphicDesign: {
+                    From: "#A276FF",
+                    To: "#A276FF",
+                },
+                Modeling: {
+                    From: "#F7C59F",
+                    To: "#F285C7",
+                },
+            },
+            fontFamily: {
+                sans: ["Work Sans"],
             },
         },
     },
