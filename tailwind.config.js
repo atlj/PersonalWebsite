@@ -1,6 +1,6 @@
 module.exports = {
     purge: ["./pages/**/*.tsx", "./src/**/*.tsx"],
-    darkMode: false, // or 'media' or 'class'
+    darkMode: "class",
     theme: {
         extend: {
             colors: {
@@ -15,6 +15,11 @@ module.exports = {
                 Modeling: {
                     From: "#F7C59F",
                     To: "#F285C7",
+                },
+
+                Contact: {
+                    From: "#654DFF",
+                    To: "#C955FF",
                 },
             },
             fontFamily: {

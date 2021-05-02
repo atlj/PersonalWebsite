@@ -10,9 +10,19 @@ import {
 } from "@components";
 
 const Home: React.FC = () => {
+    const [variant, useVariant]: [
+        "default" | "contact",
+        React.Dispatch<React.SetStateAction<"default" | "contact">>,
+    ] = React.useState("default");
     return (
         <Container>
-            <ContactBox className="w-4/5 self-center md:w-3/4 lg:w-2/5" />
+            <ContactBox
+                onClick={() => {
+                    useVariant(variant === "default" ? "contact" : "default");
+                }}
+                appearance={variant}
+                className="w-4/5 self-center md:w-3/4 lg:w-2/5  "
+            />
         </Container>
     );
 };
