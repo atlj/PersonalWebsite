@@ -13,14 +13,12 @@ export const ContactBox = ({ className, appearance, onClick }: Props) => {
     return (
         <div
             onClick={onClick}
-            className={cn(
-                styles.container,
-                className,
-                appearance === "default" ? styles.default : styles.contact,
-            )}
+            className={cn(styles.container, className, {
+                [styles.default]: appearance === "default",
+                [styles.contact]: appearance === "contact",
+            })}
         >
-            <div className="w-16 h-16 md:w-28 md:h-28 flex-shrink-0 dark:text-GraphicDesign-To ">
-                {/* TODO BU GORSELI ORTALA */}
+            <div className="w-16 h-16 md:w-28 md:h-28 flex-shrink-0 dark:text-GraphicDesign-To flex justify-center items-center ">
                 <Image
                     width="100%"
                     height="100%"
