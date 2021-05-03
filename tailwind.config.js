@@ -10,7 +10,7 @@ module.exports = {
                 },
                 GraphicDesign: {
                     From: "#A276FF",
-                    To: "#A276FF",
+                    To: "#59A9F2",
                 },
                 Modeling: {
                     From: "#F7C59F",
