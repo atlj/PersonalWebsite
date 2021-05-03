@@ -3,11 +3,11 @@ import styles from "./index.module.css";
 import cn from "classnames";
 import { MouseEventHandler } from "react";
 
-type Props = {
+interface Props {
     className: string;
     appearance: "default" | "contact";
     onClick?: MouseEventHandler;
-};
+}
 
 export const ContactBox = ({ className, appearance, onClick }: Props) => {
     return (
