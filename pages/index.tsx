@@ -1,13 +1,6 @@
 import React from "react";
 
-import {
-    Container,
-    Header,
-    Main,
-    Footer,
-    Cards,
-    ContactBox,
-} from "@components";
+import { Container, Card, ContactBox } from "@components";
 
 const Home: React.FC = () => {
     const [variant, useVariant]: [
@@ -23,6 +16,11 @@ const Home: React.FC = () => {
                 appearance={variant}
                 className="w-4/5 self-center md:w-3/4 lg:w-2/5  "
             />
+            <div className="flex container self-center justify-center pt-20  ">
+                <Card appearance="programming" />
+                <Card appearance="graphicdesign" />
+                <Card appearance="modeling" />
+            </div>
         </Container>
     );
 };

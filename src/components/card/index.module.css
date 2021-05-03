@@ -1,0 +1,16 @@
+.card {
+    @apply rounded;
+}
+
+.programming {
+    @apply bg-gradient-to-b from-Programming-From to-Programming-To;
+    box-shadow: 4px 4px 10px rgba(206, 93, 147, 0.24);
+}
+.graphicdesign {
+    @apply bg-gradient-to-b from-GraphicDesign-From to-GraphicDesign-To;
+    box-shadow: 4px 4px 10px rgba(134, 91, 255, 0.25);
+}
+.modeling {
+    @apply bg-gradient-to-b from-Modeling-From to-Modeling-To;
+    box-shadow: 4px 4px 10px rgba(255, 80, 80, 0.25);
+}
