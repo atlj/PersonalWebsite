@@ -14,7 +14,7 @@ export const ContactBox = ({ className, appearance, onClick }: Props) => {
         <div
             onClick={onClick}
             className={cn(styles.container, className, {
-                [styles.default]: appearance === "default",
+                "dark:bg-dark-800": appearance === "default",
                 [styles.contact]: appearance === "contact",
             })}
         >
@@ -26,7 +26,7 @@ export const ContactBox = ({ className, appearance, onClick }: Props) => {
                 />
             </div>
 
-            <div className="font-sans text-sm md:text-2xl ml-3 text-center container ">
+            <div className="dark:text-white font-sans text-sm md:text-2xl ml-3 text-center container ">
                 {appearance === "default"
                     ? "Merhaba ben Burak Güner. Benimle iletişime geçmek için buraya tıklayabilirsiniz."
                     : "//TODO ADD CONTACT ITEMS HERE"}

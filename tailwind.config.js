@@ -4,6 +4,11 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                dark: {
+                    900: "#121212",
+                    800: "#1E1E1E",
+                },
+
                 Programming: {
                     From: "#5182FF",
                     To: "#F4ACE4",
@@ -20,6 +25,10 @@ module.exports = {
                 Contact: {
                     From: "#654DFF",
                     To: "#C955FF",
+                },
+                BackgroundGradient: {
+                    From: "#FFFFFF",
+                    To: "#F3F3F3",
                 },
             },
             fontFamily: {
