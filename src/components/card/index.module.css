@@ -1,5 +1,5 @@
 .card {
-    @apply rounded;
+    @apply rounded-md md:rounded-lg flex  flex-col;
 }
 
 .programming {

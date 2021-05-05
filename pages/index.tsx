@@ -16,7 +16,7 @@ const Home: React.FC = () => {
                 appearance={variant}
                 className="w-4/5 self-center md:w-3/4 lg:w-2/5  "
             />
-            <div className="flex container self-center justify-center pt-20  ">
+            <div className="flex container space-x-8 md:space-x-20  self-center justify-center  overscroll-x-none pt-20  ">
                 <Card appearance="programming" />
                 <Card appearance="graphicdesign" />
                 <Card appearance="modeling" />

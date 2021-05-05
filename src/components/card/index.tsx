@@ -2,7 +2,6 @@ import React from "react";
 import cn from "classnames";
 import styles from "./index.module.css";
 import Image from "next/image";
-import { prependOnceListener } from "node:process";
 
 interface Props {
     appearance: "programming" | "graphicdesign" | "modeling";
@@ -18,7 +17,7 @@ export const Card = ({ appearance, className }: Props) => {
                 [styles.modeling]: appearance === "modeling",
             })}
         >
-            <div className="flex container flex-shrink-0 items-center justify-center ">
+            <div className=" w-20 h-20 md:w-36 md:h-36 mx-2 mt-2 md:mx-5 md:mt-5 flex  flex-shrink-0  self-center ">
                 <Image
                     src={cn({
                         "/res/categories/categoryProgramming.png":
@@ -28,11 +27,12 @@ export const Card = ({ appearance, className }: Props) => {
                         "/res/categories/categoryModeling.png":
                             appearance === "modeling",
                     })}
-                    width="100%"
-                    height="100%"
+                    className="  rounded-full "
+                    width="150px"
+                    height="150px"
                 />
             </div>
-            <h4 className="text-center font-sans ">
+            <h4 className="mt-3 mb-4 md:mt-6 md:mb-7 self-center justify-center text-center font-sans text-xs md:text-xl ">
                 {cn({
                     Programlama: appearance === "programming",
                     "Grafik Tasarım": appearance === "graphicdesign",
