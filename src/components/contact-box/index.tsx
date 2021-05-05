@@ -1,107 +1,36 @@
-import React from "react";
-import { Base, ProfilePic, Text, Box } from "./styled";
 import Image from "next/image";
-import { SVGCross, SVGMail, SVGArtStation, SVGGithub } from "@components/icons";
+import styles from "./index.module.css";
+import cn from "classnames";
+import { MouseEventHandler } from "react";
 
-const Default: React.FC<{
-    onClick?: React.MouseEventHandler<HTMLDivElement>;
-}> = ({ onClick }) => {
+interface Props {
+    className: string;
+    appearance: "default" | "contact";
+    onClick?: MouseEventHandler;
+}
+
+export const ContactBox = ({ className, appearance, onClick }: Props) => {
     return (
-        <Base onClick={onClick} className="default">
-            <ProfilePic>
+        <div
+            onClick={onClick}
+            className={cn(styles.container, className, {
+                "dark:bg-dark-800": appearance === "default",
+                [styles.contact]: appearance === "contact",
+            })}
+        >
+            <div className="w-16 h-16 md:w-28 md:h-28 flex-shrink-0 dark:text-GraphicDesign-To flex justify-center items-center ">
                 <Image
+                    width="100%"
+                    height="100%"
                     src="/res/profilePicture.png"
-                    width="114px"
-                    height="114px"
                 />
-            </ProfilePic>
-
-            <Text>
-                Merhaba ben Burak Güner. Benimle iletişime geçmek için buraya
-                tıklayabilirsiniz.{" "}
-            </Text>
-        </Base>
-    ); //TODO TEXTİ EDİTLE
-};
-
-const Contact: React.FC<{
-    onClick?: React.MouseEventHandler<HTMLAnchorElement>;
-}> = ({ onClick }) => {
-    return (
-        <Base className="contact">
-            <ProfilePic>
-                <Image
-                    src="/res/profilePicture.png"
-                    width="114px"
-                    height="114px"
-                />
-            </ProfilePic>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-                <Box
-                    href="mailto:md.burak.guner@gmail.com"
-                    style={{
-                        marginRight: 13,
-                        marginTop: 19,
-                        display: "flex",
-                        alignItems: "center",
-                    }}
-                    className="rectangle"
-                >
-                    <div
-                        style={{
-                            display: "flex",
-                            marginRight: 11,
-                            marginLeft: 7,
-                        }}
-                    >
-                        <SVGMail color="black" />
-                    </div>
-                    <Text>md.burak.guner@gmail.com</Text>
-                </Box>
-                <div
-                    style={{
-                        flexDirection: "row",
-                        display: "flex",
-                        marginTop: 10.9,
-                    }}
-                >
-                    <Box
-                        target="_blank"
-                        href="https://artstation.com/atlj"
-                        className="square"
-                    >
-                        <SVGArtStation />
-                    </Box>
-                    <Box
-                        target="_blank"
-                        href="https://github.com/atlj"
-                        style={{ marginLeft: 10 }}
-                        className="square"
-                    >
-                        <SVGGithub />
-                    </Box>
-                </div>
             </div>
-            <Box
-                href="#"
-                onClick={onClick}
-                style={{ marginRight: 10, marginTop: 19 }}
-                className="square"
-            >
-                <SVGCross color="black" />
-            </Box>
-        </Base>
-    );
-};
 
-export const ContactBox: React.FC<{
-    variant: "default" | "contact";
-    onClick?: React.MouseEventHandler<HTMLDivElement | HTMLAnchorElement>;
-}> = ({ variant, onClick }) => {
-    switch (variant) {
-        case "default":
-            return <Default onClick={onClick} />;
-        case "contact":
-            return <Contact onClick={onClick} />;
-    }
+            <div className="dark:text-white font-sans text-sm md:text-2xl ml-3 text-center container ">
+                {appearance === "default"
+                    ? "Merhaba ben Burak Güner. Benimle iletişime geçmek için buraya tıklayabilirsiniz."
+                    : "//TODO ADD CONTACT ITEMS HERE"}
+            </div>
+        </div>
+    );
 };

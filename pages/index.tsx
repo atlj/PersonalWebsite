@@ -1,24 +1,28 @@
 import React from "react";
 
-import { Wrapper, ContactBox } from "@components";
-import GlobalStyle from "@styles/globalStyles";
+import { Container, Card, ContactBox } from "@components";
 
 const Home: React.FC = () => {
     const [variant, useVariant]: [
-        variant: "default" | "contact",
-        useVariant: React.Dispatch<React.SetStateAction<"default" | "contact">>,
+        "default" | "contact",
+        React.Dispatch<React.SetStateAction<"default" | "contact">>,
     ] = React.useState("default");
     return (
-        <Wrapper style={{ justifyContent: "center", alignItems: "center" }}>
-          
-            <GlobalStyle />
+        <Container>
             <ContactBox
                 onClick={() => {
                     useVariant(variant === "default" ? "contact" : "default");
                 }}
-                variant={variant}
+                appearance={variant}
+                className="w-4/5 self-center md:w-3/4 lg:w-2/5  "
             />
-        </Wrapper>
+            <div className="flex container space-x-8 md:space-x-20  self-center justify-center  overscroll-x-none pt-20  ">
+                <Card appearance="programming" />
+                <Card appearance="graphicdesign" />
+                <Card appearance="modeling" />
+            </div>
+        </Container>
     );
 };
+
 export default Home;

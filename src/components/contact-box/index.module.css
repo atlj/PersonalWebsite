@@ -1,0 +1,8 @@
+.container {
+    @apply rounded-xl  flex items-center justify-center  px-5 py-2;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.contact {
+    @apply bg-gradient-to-b from-Contact-From to-Contact-To;
+}

@@ -1,14 +1,20 @@
 import React from "react";
-import Head from "next/head";
 import { AppProps } from "next/app";
-import { StyledThemeProvider } from "@definitions/styled-components";
+import Head from "next/head";
+import "tailwindcss/tailwind.css";
+import "@styles/global.css";
 import { appWithTranslation } from "@i18n";
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     return (
-        <StyledThemeProvider>
+        <>
             <Head>
                 <title>Burak Güner</title>
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+                    rel="stylesheet"
+                />
                 <link
                     rel="apple-touch-icon"
                     sizes="180x180"
@@ -57,7 +63,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
                 />
             </Head>
             <Component {...pageProps} />
-        </StyledThemeProvider>
+        </>
     );
 }
 
