@@ -3,10 +3,9 @@ import React from "react";
 import { Container, Card, ContactBox } from "@components";
 
 const Home: React.FC = () => {
-    const [variant, useVariant]: [
-        "default" | "contact",
-        React.Dispatch<React.SetStateAction<"default" | "contact">>,
-    ] = React.useState("default");
+    const [variant, useVariant] = React.useState<"default" | "contact">(
+        "default",
+    );
     return (
         <Container>
             <ContactBox
