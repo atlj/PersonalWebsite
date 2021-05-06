@@ -1,5 +1,6 @@
 .card {
-    @apply rounded-md md:rounded-lg flex  flex-col;
+    @apply transform-gpu rounded-md md:rounded-lg flex flex-col md:hover:-translate-y-3 hover:-translate-y-1.5 hover:scale-110;
+    transition: 0.2s;
 }
 
 .programming {
