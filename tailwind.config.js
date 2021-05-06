@@ -30,6 +30,15 @@ module.exports = {
                     From: "#FFFFFF",
                     To: "#F3F3F3",
                 },
+
+                Language: {
+                    From: "#D9FAFF",
+                    To: "#FBFFF2",
+                },
+                Theme: {
+                    From: "#E9DBFF",
+                    To: "#FEFCF5",
+                },
             },
             fontFamily: {
                 sans: ["Work Sans"],
