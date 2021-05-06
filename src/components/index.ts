@@ -6,3 +6,4 @@ export { Card } from "./card";
 export { Footer } from "./footer";
 export { Container } from "./container";
 export { ContactBox } from "./contact-box";
+export { Switch } from "./switch";

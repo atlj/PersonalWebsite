@@ -32,7 +32,7 @@ export const Card = ({ appearance, className }: Props) => {
                     height="150px"
                 />
             </div>
-            <h4 className="mt-3 mb-4 md:mt-6 md:mb-7 self-center justify-center text-center font-sans text-xs md:text-xl ">
+            <h4 className="mt-4 mb-5 md:mt-6 md:mb-7 self-center justify-center text-center font-sans text-xs md:text-xl ">
                 {cn({
                     Programlama: appearance === "programming",
                     "Grafik Tasarım": appearance === "graphicdesign",
