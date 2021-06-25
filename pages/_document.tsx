@@ -6,7 +6,6 @@ import Document, {
     NextScript,
     DocumentInitialProps,
 } from "next/document";
-
 class CustomDocument extends Document {
     static async getInitialProps(
         ctx: DocumentContext,
@@ -18,7 +17,7 @@ class CustomDocument extends Document {
     render() {
         //TODO: ADD DARK MODE TO HTML
         return (
-            <Html className="dark">
+            <Html>
                 <Head />
                 <body className="bg-gradient-to-b from-BackgroundGradient-From to-BackgroundGradient-To dark:from-dark-900 dark:to-dark-900 ">
                     <Main />

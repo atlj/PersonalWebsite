@@ -4,5 +4,5 @@ export { default as NextjsIcon } from "./NextjsIcon";
 export { default as PankodIcon } from "./PankodIcon";
 export { default as TwitterIcon } from "./TwitterIcon";
 export { default as YoutubeIcon } from "./YoutubeIcon";
-export { default as SunIcon } from "./SunIcon";
-export { default as MoonIcon } from "./MoonIcon";
+export { default as LightMode } from "./LightMode";
+export { default as DarkMode } from "./DarkMode";
