@@ -73,14 +73,22 @@ export const Switch = ({ appearance, className, onClick }: Props) => {
                     "dark:text-white": buttonPos === "B",
                 })}
             >
-                {appearance === "lang" ? "TR" : <LightMode />}
+                {appearance === "lang" ? (
+                    "TR"
+                ) : (
+                    <LightMode className={cn(styles.icon)} />
+                )}
             </div>
             <div
                 className={cn(styles.secondItem, {
                     "dark:text-white": buttonPos === "A",
                 })}
             >
-                {appearance === "lang" ? "EN" : <DarkMode />}
+                {appearance === "lang" ? (
+                    "EN"
+                ) : (
+                    <DarkMode className={cn(styles.icon)} />
+                )}
             </div>
         </div>
     );
