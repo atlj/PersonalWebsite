@@ -6,7 +6,7 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "svgr": "npx @svgr/cli -d src/components/icons --ignore-existing --icon --typescript public/icons",
+        "svgr": "npx @svgr/cli -d src/components/icons --ignore-existing --icon --typescript src/components/icons",
         "build:analyze": "ANALYZE=true npm run build",
         "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
         "prettier": "prettier --write '**/*.{js,jsx,ts,tsx}'"
